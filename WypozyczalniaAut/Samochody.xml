@@ -1,0 +1,50 @@
+<Samochody>
+	<Samochod>
+		<Id>1</Id>
+		<Model>ModelS</Model>
+		<Marka>Tesla</Marka>
+		<LiczbaMiejsc>5</LiczbaMiejsc>
+		<Cena>350</Cena>
+		<RokWydania>2021</RokWydania>
+		<Klimatyzacja>true</Klimatyzacja>
+		<KonsumpcjaPaliwaZaKm>0.15</KonsumpcjaPaliwaZaKm>
+		<ImageName>tmodels.jpg</ImageName>
+		<NumerPlyty>XYZ 123XY</NumerPlyty>
+		<TypTransmisji>Automat</TypTransmisji>
+		<TypPaliwa>Electric</TypPaliwa>
+		<Typ>Sedan</Typ>
+		<Dostepnosc>true</Dostepnosc>
+	</Samochod>
+	<Samochod>
+		<Id>2</Id>
+		<Model>Mustang</Model>
+		<Marka>Ford</Marka>
+		<LiczbaMiejsc>4</LiczbaMiejsc>
+		<Cena>400</Cena>
+		<RokWydania>2020</RokWydania>
+		<Klimatyzacja>true</Klimatyzacja>
+		<KonsumpcjaPaliwaZaKm>0.12</KonsumpcjaPaliwaZaKm>
+		<ImageName>fmustang.jpg</ImageName>
+		<NumerPlyty>AB 5678Y</NumerPlyty>
+		<TypTransmisji>Manual</TypTransmisji>
+		<TypPaliwa>Benzyna</TypPaliwa>
+		<Typ>Sports</Typ>
+		<Dostepnosc>true</Dostepnosc>
+	</Samochod>
+	<Samochod>
+		<Id>3</Id>
+		<Model>Civic</Model>
+		<Marka>Honda</Marka>
+		<LiczbaMiejsc>4</LiczbaMiejsc>
+		<Cena>200</Cena>
+		<RokWydania>2021</RokWydania>
+		<Klimatyzacja>true</Klimatyzacja>
+		<KonsumpcjaPaliwaZaKm>0.16</KonsumpcjaPaliwaZaKm>
+		<ImageName>hcivic.jpg</ImageName>
+		<NumerPlyty>KRK YB54</NumerPlyty>
+		<TypTransmisji>Manual</TypTransmisji>
+		<TypPaliwa>Benzyna</TypPaliwa>
+		<Typ>Hatchback</Typ>
+		<Dostepnosc>true</Dostepnosc>
+	</Samochod>
+</Samochody>

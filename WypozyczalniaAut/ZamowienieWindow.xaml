@@ -1,0 +1,25 @@
+﻿<Window x:Class="WypozyczalniaAut.ZamowienieWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dodaj Zamówienie" Height="400" Width="700">
+    <Grid>
+        <TextBlock Text="Dodaj Zamówienie" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,10"/>
+
+        <StackPanel Orientation="Vertical" Margin="20">
+            <TextBlock Text="Wybierz Klienta:" />
+            <ComboBox Name="cmbClient" Width="200" Margin="0,5" />
+
+            <TextBlock Text="Wybierz Samochód:" />
+            <ComboBox Name="cmbCar" Width="200" Margin="0,5" />
+
+            <TextBlock Text="Data Odbioru:" Margin="10,10,0,0"/>
+            <DatePicker Name="pickupDate" Width="200" Margin="0,5" />
+
+            <TextBlock Text="Data Zwrotu:" Margin="10,10,0,0"/>
+            <DatePicker Name="returnDate" Width="200" Margin="0,5" />
+
+            <Button Name="btnSaveOrder" Content="Zapisz Zamówienie" Width="200" Height="40" 
+                    HorizontalAlignment="Center" Margin="0,20,0,0" Click="btnSaveOrder_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

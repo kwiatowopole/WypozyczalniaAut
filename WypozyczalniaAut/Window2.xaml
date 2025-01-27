@@ -1,0 +1,37 @@
+﻿<Window x:Class="WypozyczalniaAut.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Zarządzanie klientami" Height="500" Width="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+       
+        <Button Grid.Row="0" Grid.Column="0" Content="Powrót" Width="80" Height="30" Margin="5" Click="btnBackToMainWindow_Click" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Imię:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5"/>
+        <TextBox x:Name="txtClientFirstName" Grid.Row="1" Grid.Column="1" Width="250" Margin="5"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Nazwisko:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5"/>
+        <TextBox x:Name="txtClientLastName" Grid.Row="2" Grid.Column="1" Width="250" Margin="5"/>
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Numer prawa jazdy (ID):" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5"/>
+        <TextBox x:Name="txtDrivingLicenseNumber" Grid.Row="3" Grid.Column="1" Width="250" Margin="5"/>
+
+        <Button Grid.Row="4" Grid.Column="0" Content="Dodaj klienta" Width="120" Margin="5" Click="btnAddClient_Click" HorizontalAlignment="Right"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="Usuń klienta" Width="120" Margin="5" Click="btnDeleteClient_Click" HorizontalAlignment="Left"/>
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Content="Wyświetl klientów" Width="250" Margin="5" Click="btnDisplayClients_Click" HorizontalAlignment="Center"/>
+
+        <ListBox x:Name="lstClients" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+    </Grid>
+</Window>

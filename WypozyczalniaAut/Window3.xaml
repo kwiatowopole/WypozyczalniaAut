@@ -1,0 +1,42 @@
+﻿<Window x:Class="WypozyczalniaAut.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lista Samochodów" Height="400" Width="700">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Content="Powrót" Width="80" Height="30" Margin="5" Click="btnBackToMainWindow_Click" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Lista Samochodów" FontSize="24" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <!-- Filtry i przycisk do czyszczenia filtrów -->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" Margin="0,0,0,20">
+            <StackPanel Margin="10">
+                <TextBlock Text="Typ Transmisji:" />
+                <ComboBox Name="cmbTransmissionType" Width="150" SelectionChanged="FilterCars"/>
+            </StackPanel>
+            <StackPanel Margin="10">
+                <TextBlock Text="Typ Paliwa:" />
+                <ComboBox Name="cmbFuelType" Width="150" SelectionChanged="FilterCars"/>
+            </StackPanel>
+            <StackPanel Margin="10">
+                <TextBlock Text="Typ Samochodu:" />
+                <ComboBox Name="cmbCarType" Width="150" SelectionChanged="FilterCars"/>
+            </StackPanel>
+
+            <!-- Przycisk czyszczenia filtrów -->
+            <Button Name="btnClearFilters" Content="Czyszczenie filtrów" Width="150" Height="30" 
+                    Margin="10" VerticalAlignment="Center" Click="btnClearFilters_Click"/>
+        </StackPanel>
+
+        <ListBox Name="lstCars" Grid.Row="2" Margin="10" />
+    </Grid>
+</Window>
